@@ -45,7 +45,7 @@ public class Targeting : MonoBehaviour
     {
         if (shootingTime <= 0)
         {
-            shootingTime = 0.5f;
+            shootingTime = shootingRate;
             GameObject make = (GameObject)Instantiate(dart);
             make.transform.rotation = transform.rotation;
             make.transform.position = transform.position;
